@@ -8,7 +8,7 @@
 
 * docker build -t abdubuntu:1.0 . - building image 
 * docker images - check images
-* docekr rm1 abdubuntu:1.0 - remove image
+* docekr rmi abdubuntu:1.0 - remove image
 
 ## what I did
 
