@@ -1,31 +1,30 @@
-# Day 07 - Dockerized App onn EC2 (VM)
+# Day 08 - Multiple contiainers
 
 ## Objective
 
-* Take a small app, dockerize it, deploy on EC2, and access via browser
+* Stop and Restart Container
+* Change flask app message
+* Run Multiple Containers
 
 ## Commands Practiced
 
-* docker logs <container_id -  shows what the container printed (Errors, startup messages)
-	- debugging tool if container fails
+* docker prune - remove unwanted containers and images
+	- docker container prune
+	- docker image prune -a
 
 ## What I did
 
-* Connected VM to host using SSH
-* Created project folder and files:
-	- Dockerfile
-	- app.py
-	- requirements.txt
-* Used docker logs command to check what container is saying
-* Container ran and tested on the browser
+* Created, stopped and restarted containers
+* Changed flask app message, created new image, new container
+* Checked in the browser
+* Ran multiple containers
 
 ## Problems Faced
 
-* DEPRECATED: the legac builder is deprecated
-* Failed to connect to localhost	 
+* Token for Github expired, and problem with connecting to Github. 403 error	 
+* Problem when creating new flask image from Dockerfile (Didn't used '.' at the end of docker build)
 
 ## How I solved
 
-* Connected to Internet and it worked
-	- Corrected Dockerfile and app.py
-* Corrected mistakes in files
+* Created token with repo permissions checked
+* Used dot at the end to use the current directory
